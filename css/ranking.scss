@@ -1,0 +1,49 @@
+.ranking{
+    text-align: left;
+    font-size: 1.2em;
+    margin: 6em 7em;
+    border: 0.2em solid silver;
+}
+
+.periodSec{
+    margin: 6em;
+    font-size: 1.3em;
+    animation: appearY 1s ease-in-out forwards;
+}
+
+#period{
+    background-color: black;
+    margin: 0.8em;
+    color:white;
+    border: 0.2em solid silver;
+    border-radius: 0.5em;
+}
+.float{
+    animation: appearX 1s ease-in-out forwards; 
+}
+
+
+
+@keyframes appearX{
+    from{
+        opacity: 0;
+        transform: translatex(-100px);
+    }
+    to{
+        transform: translatex(0);
+        opacity: 1;
+    }
+}
+
+@keyframes appearY{
+    from{
+        opacity: 0;
+        transform: translatey(-100px);
+    }
+    to{
+        transform: translatey(0);
+        opacity: 1;
+    }
+}
+
+

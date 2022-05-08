@@ -1,0 +1,276 @@
+body {
+    background-image: url(../images/BG-small.png);
+    color:white;
+    margin: 1.5em;
+}
+// navigation
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin-top: 8em;
+}
+
+nav{
+    position: fixed;
+    right: 0;
+    top:  0;
+    height: 100vh;
+    width: 50%;
+    background-color: black;
+    z-index: 10;
+    text-transform: uppercase;
+    transform: translateX(100%);
+    transition: transform .5s ease-in-out;
+        a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.3rem;
+            padding: .75em 2em;
+            display: block;
+            width: 100%;
+
+            &:hover {
+                background: darkred;
+            }
+        }
+}
+
+.close{
+    float:right;
+    margin:2em;
+    width: 2.5em;
+}
+
+.menu{
+    float:right;
+    width: 2.5em;
+    margin: 0.5em;
+}
+
+.open-nav{
+    transform: translateX(0%);
+}
+
+// greeting section
+#events{
+    height: 90vh;
+}
+#eventH{
+    margin-top:40vh;
+    opacity: 0;
+    animation: moveDown 1.5s ease-in-out forwards;
+}
+
+.mainDiv{
+    background-color: black;
+    border: 0.2em solid silver;
+    width: 90%;
+    margin-left: 5%;
+    text-align: center;
+    padding: 0;
+    p{
+        font-size:0.8rem;
+    }
+    .intro{
+        font-size: 1.2rem;
+        margin: 0.5em;
+    }
+    a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    
+}
+
+.hero{
+    animation: slideIn 1.5s ease-in-out forwards;
+    opacity: 0;
+}
+
+h1{
+    margin:2em;
+    text-decoration: underline;
+}
+
+// news
+
+.img{
+    width:30%;
+    display: inline;
+    float: left;
+    height: 7em;
+    border: 0.2em solid silver;
+}
+
+
+h2{
+    margin-top:4em;
+    text-decoration: underline;
+    opacity: 0;
+    animation: slideIn 1s ease-in-out forwards;
+}
+
+h3{
+    margin:0.5em;
+    text-decoration: underline;
+}
+
+article{
+    border-bottom: 0.2em solid silver;;
+    height: 8em;
+    padding:0.8em 0.5em;
+}
+
+
+.news{
+    animation: slideIn 2s ease-in-out forwards;
+    border-top: 0.2em solid silver;
+    opacity: 0;
+    &:hover{
+        background-color: darkred;
+    }
+}
+.news2{
+    animation: slideIn 2.5s ease-in-out forwards;
+    opacity: 0;
+    &:hover{
+        background-color: darkred;
+    }
+}
+.news3{
+    animation: slideIn 3s ease-in-out forwards;
+    opacity: 0;
+    &:hover{
+        background-color: darkred;
+    }
+}
+.news4{
+    animation: slideIn 3.5s ease-in-out forwards;
+    opacity: 0;
+    &:hover{
+        background-color: darkred;
+    }
+}
+
+footer{
+    background-color: black;
+    border: 0.2em solid silver;
+    margin: 0.5em 5%;
+    padding: 1em;
+    p{
+        display: inline;
+    }
+    
+}
+// media
+
+@media only screen and (min-width: 680px){
+body{
+    margin: 1.5em 5em;
+}
+.mainDiv{
+    p{
+        font-size: 1rem;
+    }
+    .intro{
+        font-size: 2rem;
+    }
+}
+
+}
+
+@media only screen and (min-width: 920px){
+   
+ .menu{
+     display: none;
+ }
+ nav{
+     transform: translateX(0);
+     position: unset;
+     display:block;
+     width:90%;
+     margin: 0.8em 5%;
+     height:auto;
+     background-color:black;
+     border: 0.2em solid silver;
+     animation: slideIn 1s ease-in-out forwards;
+     opacity: 0;
+     svg.close{
+         display:none;
+     } 
+     ul{
+         display:flex;
+         margin: 0;
+         text-align: center;
+     }
+     li{
+         width: 18%;
+     }
+     a{
+         padding: .5em 1.5em;
+         font-size: 1rem;
+         &:hover{
+             background: none;
+             text-decoration: underline;
+         }
+      }
+}
+.mainDiv{
+    p{
+        font-size:1.2rem;
+    }
+}
+article{
+    height: 12.5em;
+}
+.img{
+    height: 12em;
+}
+
+}
+
+@media only screen and (min-width: 1100px){
+    body{
+        width:1000px;
+        margin: 0 auto;
+        background-image: url(../images/BG.png);
+        background-size: cover;
+    }
+    article{
+        height: 14.5em;
+    }
+    .img{
+        height: 14em;
+    }
+    h3{
+        font-size:1.6em;
+    }
+    .mainDiv{
+        p{
+            font-size:1.4em;
+        }
+    }
+    
+}
+// animations
+
+@keyframes moveDown{
+    from{
+        transform: translateY(-100px);
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn{
+    from{
+        transform: translatex(-200px);
+    }
+    to{
+        transform: translatex(0);
+        opacity: 1;
+    }
+}

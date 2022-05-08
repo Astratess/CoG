@@ -1,0 +1,136 @@
+.charLayout{
+    width:90%;
+    background-color: black;
+    border: 0.2em solid silver;
+    margin-left: 5%;
+}
+.smallBox 
+    {
+        float:left;
+        width:6em;
+        height:6em;
+        border: 2px solid silver;
+        position:relative;
+        margin: 0.5em 1.1em;
+    }
+
+.smallBox img{
+    position: absolute;
+}
+.SBimg1{
+    width:100%;
+    z-index: 0;
+}
+.SBimg2
+    {
+        width:100%;
+        visibility: hidden;
+        z-index: 1;
+        opacity:0.5;
+    }
+        
+        .smallBox:hover
+        {
+            .SBimg2{
+            visibility:visible;
+            }
+        }
+        
+
+.info{
+    text-align: center;
+    
+}
+.full{
+    width: 50%;
+    height: 18em;
+    margin-top: 3em;
+    border: 0.2em solid silver;
+    opacity: 0;
+    animation: moveDown 2s ease-in-out forwards;
+}
+h1{
+    margin:0.3em;
+}
+
+#ace{
+    opacity: 0;
+    animation: moveDown 1s ease-in-out forwards;
+}
+
+#brann{
+    opacity: 0;
+    animation: moveDown 1.2s ease-in-out forwards;
+}
+
+#hanae{
+    opacity: 0;
+    animation: moveDown 1.5s ease-in-out forwards;
+}
+
+#lemus{
+    opacity: 0;
+    animation: moveDown 1.7s ease-in-out forwards;
+}
+
+#sola{
+    opacity: 0;
+    animation: moveDown 2s ease-in-out forwards;
+}
+
+#yadria{
+    opacity: 0;
+    animation: moveDown 2.2s ease-in-out forwards;
+}
+
+P{
+    opacity: 0;
+    animation: moveDown 2s ease-in-out forwards;
+}
+
+#nameChar{
+    opacity: 0;
+    animation: moveDown 2s ease-in-out forwards;
+}
+
+@media only screen and (min-width: 660px){
+.smallBox{
+    margin-left:2em;
+}
+}
+
+@media only screen and (min-width: 750px){
+    .smallBox{
+        margin-left:3em;
+    }
+    .full{
+        height: 25em;
+    }    
+}
+
+
+@media only screen and (min-width: 850px){
+        .smallBox{
+            margin-left:5em;
+        }
+}
+
+
+@media only screen and (min-width: 920px){
+    .smallBox{
+        margin-left: 6em;
+    }
+    .full{
+        height: 30em;
+    }    
+}
+
+
+@media only screen and (min-width: 1100px){
+    .smallBox{
+        margin-left: 2em;
+    }
+    .full{
+        height: 35em;
+    }    
+}
